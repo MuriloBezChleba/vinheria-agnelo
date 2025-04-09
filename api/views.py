@@ -87,8 +87,17 @@ def analisarPlaylist(request):
         
         generos_agrupados = dict(generos_counter)
 
+        if generos_counter:
+            genero_top, valor_top = generos_counter.most_common(1)[0]
+        else:
+            genero_top, valor_top = None, 0
+
         return JsonResponse({
-            'generos': generos_agrupados
+            'generos': generos_agrupados,
+            'mais_comum':{
+                'genero' : genero_top,
+                'valor': valor_top
+            }
         })
             
 
