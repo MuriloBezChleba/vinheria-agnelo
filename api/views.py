@@ -102,7 +102,6 @@ def analisarPlaylist(request):
             
 
 
-
     except spotipy.exceptions.SpotifyException as e:
         return JsonResponse({'error': e.msg, 'status': e.http_status}, status=e.http_status)
     except Exception as e:
