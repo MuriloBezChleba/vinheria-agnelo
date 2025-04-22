@@ -1,0 +1,29 @@
+# Virtual environment
+venv/
+env/
+.venv/
+
+.env
+node_modules
+
+Lib/
+Include/
+Scripts
+pyvenv.cfg
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Banco de dados
+db.sqlite3
+
+# Logs
+*.log
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de configuração sensíveis
+settings.py
